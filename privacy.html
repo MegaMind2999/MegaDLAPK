@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MegaDL Privacy Policy</title>
+<meta name="description" content="How MegaDL handles your data: no accounts, analytics or developer servers. Everything stays on your devices and your own network.">
+<link rel="canonical" href="https://megamind2999.github.io/MegaDLAPK/privacy.html">
+<link rel="icon" href="icon.png">
+<meta name="theme-color" content="#0b0a16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="stars" aria-hidden="true"></div>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="34" height="34">MegaDL</a>
+    <nav class="links"><a href="./#features">Features</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    <a class="btn" href="./#download">Download</a>
+  </div>
+</header>
+<main class="wrap">
+<div class="doc">
+<header>
+  <span class="eyebrow">MegaDL</span>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: November 20, 2026</p>
+</header>
+<article>
+<p>MegaDL is a download manager for Android and Windows, with an optional browser extension. It has no accounts, no ads, no analytics and no developer servers. This page explains what data the apps handle and where it goes.</p>
+
+<h2>Data stored on your devices</h2>
+<p>Your downloads, download queue and history, settings and paired devices are stored only on your own devices. The developer never receives them.</p>
+
+<h2>When MegaDL goes online</h2>
+<p>MegaDL connects to the internet only to:</p>
+<ul>
+  <li><b>Download what you ask for.</b> The site you download from receives the request, as it would from your browser or any other downloader. If you set a proxy in Settings, requests go through it.</li>
+  <li><b>Fetch lyrics from LRCLIB</b>, only if you turn on synced lyrics. LRCLIB receives the details of the song being looked up.</li>
+  <li><b>Download the built-in engine</b> (Python and FFmpeg, only if you don't use Termux) from Maven Central, the official home of the youtubedl-android library, and <b>update yt-dlp and the engine tools</b> from their official GitHub releases.</li>
+  <li><b>Check RSS feeds you add</b>, at the interval you choose. Each feed's site receives the request.</li>
+  <li><b>Share torrents you add</b> (Windows). Like any torrent app, it connects to other people sharing the same torrent, and they can see your IP address. Downloading stops sharing at the limit you set.</li>
+  <li><b>Check GitHub for app updates.</b> Android checks once a day and Windows every 12 hours. No personal data is sent with these requests.</li>
+</ul>
+
+<h2>Your local network</h2>
+<p>When you pair your phone and PC from the Devices screen, they talk directly to each other over your own Wi-Fi, encrypted, and each device can be removed on its own. Downloads you send from one device to the other, and jobs waiting for a device that's offline, stay on your devices and your network.</p>
+<p>Either app can serve a browser dashboard on your local network over HTTPS. It is protected by a key, and nothing it shows leaves your network.</p>
+
+<h2>Browser extension</h2>
+<p>The extension for Chrome, Brave and Edge talks only to MegaDL on your own PC (127.0.0.1). When it catches a download, it sends that download's URL, cookies and referer only to MegaDL, so files that need a login still work. It sends nothing to the developer or anyone else. If MegaDL isn't running, your browser downloads the file as usual.</p>
+
+<h2>Plugins</h2>
+<p>Plugins are scripts you add yourself in MegaDL for Windows. They run on your PC with your permissions and can contact the sites they are written for. MegaDL doesn't include or download any plugins for you.</p>
+
+<h2>Android permissions</h2>
+<ul>
+  <li><b>Notifications</b>: to show download progress and tell you when a download is done.</li>
+  <li><b>Storage and media access</b>: to save files to the folders you choose.</li>
+  <li><b>Install updates</b>: to install new versions of MegaDL after they are downloaded.</li>
+  <li><b>Local network</b>: to pair with your other devices and serve the browser dashboard.</li>
+  <li><b>Termux run-command</b> (only if you use Termux): to run the yt-dlp and FFmpeg you have installed in Termux.</li>
+</ul>
+
+<h2>App updates</h2>
+<p>Updates come only from MegaDL's GitHub releases. On Android, you can check any time in Settings → Updates. On Windows, updates install quietly and keep your settings.</p>
+
+<h2>Children</h2>
+<p>MegaDL is a general utility app and is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: <a href="https://github.com/MegaMind2999/MegaDLAPK/issues">open an issue on GitHub</a>.</p>
+</article>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="28" height="28">MegaDL</a>
+    <span>© 2026 MegaMind</span>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="https://github.com/MegaMind2999/MegaDLAPK/releases">Releases</a>
+      <a href="https://github.com/MegaMind2999/MegaDLAPK/issues">Report a problem</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

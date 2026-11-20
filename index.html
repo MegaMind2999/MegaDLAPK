@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MegaDL: Download manager for Android and Windows, music, video and files (free)</title>
+<meta name="description" content="MegaDL is a free IDM-style download manager for Android and Windows. Share or paste a link from YouTube, SoundCloud or any yt-dlp site: music as Opus or MP3 with cover art and synced lyrics, video at the quality you pick with subtitles, and direct files over several connections with pause and resume. Pair your phone and PC, and catch downloads from Chrome, Brave and Edge. Download the APK or the Windows installer.">
+<meta name="keywords" content="MegaDL, download manager, IDM for Android, Android download manager, Windows download manager, yt-dlp app, YouTube downloader, SoundCloud downloader, music downloader, Opus, MP3, cover art, synced lyrics, LRCLIB, video downloader, subtitles, pause resume downloads, multi-connection download, browser extension, Chrome download manager, Brave, Edge, Termux, APK download">
+<link rel="canonical" href="https://megamind2999.github.io/MegaDLAPK/">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="theme-color" content="#0b0a16">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="MegaDL: download manager for Android and Windows">
+<meta property="og:description" content="Free download manager for Android and Windows: music with cover art and lyrics, video at your quality, fast direct files with pause and resume, phone and PC pairing, and a browser extension.">
+<meta property="og:url" content="https://megamind2999.github.io/MegaDLAPK/">
+<meta property="og:image" content="https://megamind2999.github.io/MegaDLAPK/icon.png">
+<meta name="twitter:card" content="summary">
+
+<!-- Lets Google show MegaDL as an app (name, OS, price, download) in search results. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "MegaDL",
+  "description": "IDM-style download manager for Android and Windows: music as Opus or MP3 with cover art and synced lyrics, video at a chosen quality with subtitles, multi-connection direct downloads with pause and resume, phone and PC pairing on Wi-Fi, and a browser extension for Chrome, Brave and Edge.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Android 7.0 or later, Windows 10, Windows 11",
+  "url": "https://megamind2999.github.io/MegaDLAPK/",
+  "downloadUrl": "https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL.apk",
+  "installUrl": "https://github.com/MegaMind2999/MegaDLAPK/releases/latest",
+  "image": "https://megamind2999.github.io/MegaDLAPK/icon.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "MegaMind" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="stars" aria-hidden="true"></div>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-link" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></g>
+    <g id="i-music" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></g>
+    <g id="i-film" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 4v16M17 4v16M2 9h5M2 15h5M17 9h5M17 15h5"/></g>
+    <g id="i-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></g>
+    <g id="i-zap" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></g>
+    <g id="i-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></g>
+    <g id="i-devices" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="14" height="10" rx="2"/><path d="M6 18h6M9 14v4"/><rect x="17" y="8" width="5" height="12" rx="1.5"/></g>
+    <g id="i-globe" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></g>
+    <g id="i-sliders" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></g>
+    <g id="i-palette" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.3A5.7 5.7 0 0 0 22 9.7C22 5.4 17.5 2 12 2z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></g>
+    <g id="i-repeat" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></g>
+    <g id="i-box" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></g>
+    <g id="i-shield" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></g>
+    <g id="i-cursor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3l7 18 2.5-7.5L21 11z"/></g>
+    <g id="i-key" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 21 2M16 7l3 3M19 4l2 2"/></g>
+    <g id="i-win" fill="currentColor"><path d="M3 5.5 10.5 4.4v7.1H3zM11.5 4.3 21 3v8.5h-9.5zM3 12.5h7.5v7.1L3 18.5zM11.5 12.5H21V21l-9.5-1.3z"/></g>
+    <g id="i-down" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></g>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="34" height="34">MegaDL</a>
+    <nav class="links"><a href="#features">Features</a><a href="#media">Music &amp; video</a><a href="#windows">Windows</a><a href="#extension">Extension</a><a href="#devices">Devices</a><a href="#faq">FAQ</a></nav>
+    <a class="btn" href="#download"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg>Download</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <span class="eyebrow">Free for Android and Windows</span>
+      <h1 id="title">Download anything, <span class="grad-text">your way.</span></h1>
+      <p class="lead">MegaDL is a download manager in the spirit of IDM, for your phone and your PC. Share a link from any app and get music with cover art and lyrics, video at the quality you pick, or any file over several connections with pause and resume. Your phone and PC work together, and a browser extension catches downloads for you.</p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL.apk"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg>Download for Android</a>
+        <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe"><svg viewBox="0 0 24 24"><use href="#i-win"/></svg>Download for Windows</a>
+        <a class="btn ghost" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest">Release notes</a>
+      </div>
+      <div class="pills">
+        <span class="pill"><b>Free</b> forever</span>
+        <span class="pill"><b>No</b> ads or tracking</span>
+        <span class="pill">Android <b>7.0+</b></span>
+        <span class="pill">Windows <b>10 &amp; 11</b> x64</span>
+        <span class="pill">Chrome, Brave &amp; <b>Edge</b></span>
+      </div>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="phone">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="app-date">Downloads · 3 running</div>
+          <div class="app-hello">MegaDL ⚡</div>
+          <div class="hero-card">
+            <div class="ring"></div>
+            <div>
+              <small>Downloading now</small>
+              <strong>3 of 5 done</strong><br>
+              <span class="streak">⚡ 8 connections</span>
+              <div class="bars"><i style="height:40%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:65%"></i><i style="height:80%"></i><i class="on" style="height:60%"></i></div>
+            </div>
+          </div>
+          <div class="quick"><span>🔗 <b>Paste or share a link</b>…</span><span>➤</span></div>
+          <div class="section-label">Queue</div>
+          <div class="task">
+            <div class="check"></div>
+            <div><p>Morning playlist · track 4</p><div class="chips"><span class="chip a">♪ Opus · Best</span><span class="chip r">🎤 Lyrics</span></div></div>
+          </div>
+          <div class="task">
+            <div class="check"></div>
+            <div><p>Travel vlog, part 2</p><div class="chips"><span class="chip l">▶ 1080p</span><span class="chip">CC EN · AR</span></div></div>
+          </div>
+          <div class="task done">
+            <div class="check done"></div>
+            <div><p>installer.zip</p><div class="chips"><span class="chip">Direct file</span></div></div>
+          </div>
+          <div class="fab">+</div>
+        </div>
+      </div>
+      <div class="float-card fc-1"><div class="ico i-amber"><svg viewBox="0 0 24 24"><use href="#i-music"/></svg></div><div><b>Saved to Music</b><span>Opus · cover art · synced lyrics</span></div></div>
+      <div class="float-card fc-2"><div class="ico i-cyan"><svg viewBox="0 0 24 24"><use href="#i-devices"/></svg></div><div><b>Sent to your PC</b><span>Same Wi-Fi · Devices</span></div></div>
+      <div class="float-card fc-3"><div class="ico i-green"><svg viewBox="0 0 24 24"><use href="#i-globe"/></svg></div><div><b>Caught from your browser</b><span>With the page's cookies</span></div></div>
+    </div>
+  </section>
+
+  <section id="features" class="center reveal">
+    <span class="eyebrow">Everything in one place</span>
+    <h2>One download manager, <span class="grad-text">every kind of link</span></h2>
+    <p class="lead">Built to be quick to use every day: share a link, pick what you want, and let the queue do the rest.</p>
+  </section>
+  <div class="features">
+    <div class="feature reveal"><div class="ico i-violet"><svg viewBox="0 0 24 24"><use href="#i-link"/></svg></div><h3>Share or paste a link</h3><p>Share from any app: YouTube, SoundCloud, any site yt-dlp supports, or a direct file. YouTube Music links become songs and other videos stay videos, with site rules you can change.</p></div>
+    <div class="feature reveal"><div class="ico i-pink"><svg viewBox="0 0 24 24"><use href="#i-music"/></svg></div><h3>Music, ready to play</h3><p>Opus or MP3, in best quality or small size, with square cover art and metadata. Turn on synced lyrics from LRCLIB if you like.</p></div>
+    <div class="feature reveal"><div class="ico i-amber"><svg viewBox="0 0 24 24"><use href="#i-film"/></svg></div><h3>Video at your quality</h3><p>Pick a quality, or open Formats to choose the exact stream: resolution, codec, audio language, even just part of a video. English or Arabic subtitles included.</p></div>
+    <div class="feature reveal"><div class="ico i-cyan"><svg viewBox="0 0 24 24"><use href="#i-search"/></svg></div><h3>Search by song name</h3><p>No link? Just type the name of a song to search for it.</p></div>
+    <div class="feature reveal"><div class="ico i-blue"><svg viewBox="0 0 24 24"><use href="#i-zap"/></svg></div><h3>Fast direct downloads</h3><p>Direct files download over several connections at once, with pause and resume.</p></div>
+    <div class="feature reveal"><div class="ico i-green"><svg viewBox="0 0 24 24"><use href="#i-list"/></svg></div><h3>A queue that keeps going</h3><p>Several downloads at a time, a Wi-Fi-only option, retry, and a history you can search.</p></div>
+    <div class="feature reveal"><div class="ico i-violet"><svg viewBox="0 0 24 24"><use href="#i-devices"/></svg></div><h3>Phone and PC together</h3><p>Pair them on the same Wi-Fi and send a download from one to the other over an encrypted link. Jobs for an offline device wait until it's back.</p></div>
+    <div class="feature reveal"><div class="ico i-cyan"><svg viewBox="0 0 24 24"><use href="#i-key"/></svg></div><h3>Browser dashboard</h3><p>Either app serves a dashboard to browsers on your network over HTTPS, protected by a key.</p></div>
+    <div class="feature reveal"><div class="ico i-amber"><svg viewBox="0 0 24 24"><use href="#i-sliders"/></svg></div><h3>Settings your way</h3><p>A default folder for each type, a proxy, how many downloads run at once and how many connections each file gets.</p></div>
+    <div class="feature reveal"><div class="ico i-pink"><svg viewBox="0 0 24 24"><use href="#i-palette"/></svg></div><h3>Stunning themes</h3><p>Themes and accent colours, light, dark and AMOLED modes, a glass navigation bar and tidy, collapsible settings groups.</p></div>
+    <div class="feature reveal"><div class="ico i-blue"><svg viewBox="0 0 24 24"><use href="#i-repeat"/></svg></div><h3>Updates itself</h3><p>Both apps get new versions from GitHub releases. Windows installs them quietly and keeps your settings.</p></div>
+    <div class="feature reveal"><div class="ico i-green"><svg viewBox="0 0 24 24"><use href="#i-box"/></svg></div><h3>Termux or its own engine</h3><p>One small APK. It uses the yt-dlp and FFmpeg you already have in Termux, or downloads its own engine once (about 50 MB) when you first need it. No Termux required.</p></div>
+  </div>
+
+  <section id="media" class="reveal">
+    <div class="features" style="margin-top:0">
+      <div class="feature big">
+        <div>
+          <span class="eyebrow">Music and video your way</span>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.2rem)">As small or as sharp as <span class="grad-text">you want</span></h2>
+          <p style="margin-top:12px">Choose small Opus files for your phone, the best quality the site has, MP3 for any player, or a video at the resolution you pick. MegaDL adds cover art and metadata so your music looks right in any player.</p>
+        </div>
+        <div class="levels">
+          <div class="level"><div class="meter"><i style="height:22%"></i></div>Opus<span>small size</span></div>
+          <div class="level"><div class="meter"><i style="height:48%"></i></div>Opus<span>best quality</span></div>
+          <div class="level"><div class="meter"><i style="height:62%"></i></div>MP3<span>plays anywhere</span></div>
+          <div class="level hot"><div class="meter"><i style="height:100%"></i></div>Video<span>1080p, 720p…</span></div>
+        </div>
+      </div>
+      <div class="feature"><div class="ico i-amber"><svg viewBox="0 0 24 24"><use href="#i-music"/></svg></div><h3>Lyrics &amp; subtitles</h3><p>Synced lyrics from LRCLIB for your songs, and English or Arabic subtitles for your videos.</p>
+        <div class="tags"><span>Cover art</span><span>Metadata</span><span>Synced lyrics</span><span>English subtitles</span><span>Arabic subtitles</span></div></div>
+    </div>
+  </section>
+
+  <section id="windows" class="center reveal">
+    <span class="eyebrow">MegaDL for Windows</span>
+    <h2>The same MegaDL, <span class="grad-text">on your PC</span></h2>
+    <p class="lead">Your downloads on the big screen, with a scheduler, Start all and Pause all, and the browser extension. An installer for Windows 10 and 11 (x64) that updates itself every 12 hours and keeps your settings.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe"><svg viewBox="0 0 24 24"><use href="#i-win"/></svg>Download for Windows</a>
+    </div>
+  </section>
+  <div class="steps">
+    <div class="step reveal"><h3>Install your way</h3><p>Just for you, or for all users on the PC. You can also pick your own folder.</p></div>
+    <div class="step reveal"><h3>Uses what you have</h3><p>MegaDL finds yt-dlp and FFmpeg if they're already installed, as programs or through Python. If not, it installs its own.</p></div>
+    <div class="step reveal"><h3>Schedule it</h3><p>Several queues, each with its own start and stop times, days and download limit. When they finish, do nothing, exit, sleep or shut down, with 60 seconds to cancel.</p></div>
+    <div class="step reveal"><h3>A full download manager</h3><p>Categories with their own folders, a link grabber for whole pages, checksums, archive extraction, FTP, torrents and magnet links, and RSS feeds that download new items for you.</p></div>
+    <div class="step reveal"><h3>Add your own plugins</h3><p>Point MegaDL at your own script to turn a site's page links into direct downloads, or to pull links out of a page.</p></div>
+  </div>
+
+  <section id="extension" class="center reveal">
+    <span class="eyebrow">Browser extension</span>
+    <h2>Catch downloads <span class="grad-text">right from your browser</span></h2>
+    <p class="lead">For Chrome, Brave and Edge. It hands downloads to MegaDL for Windows, and if MegaDL isn't running, your browser just downloads as usual.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-extension.zip"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg>Download the extension</a>
+    </div>
+  </section>
+  <div class="features">
+    <div class="feature reveal"><div class="ico i-violet"><svg viewBox="0 0 24 24"><use href="#i-globe"/></svg></div><h3>Catches downloads</h3><p>Downloads you start in the browser go to MegaDL with the page's cookies and referer, so files that need a login still work.</p></div>
+    <div class="feature reveal"><div class="ico i-pink"><svg viewBox="0 0 24 24"><use href="#i-cursor"/></svg></div><h3>Alt+click any link</h3><p>Hold Alt and click a link to send it straight to MegaDL.</p></div>
+    <div class="feature reveal"><div class="ico i-cyan"><svg viewBox="0 0 24 24"><use href="#i-film"/></svg></div><h3>Media on the page</h3><p>The extension's popup lists the media on the page you're on.</p></div>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><h3>Get it</h3><p>Download MegaDL-extension.zip and unzip it, or open MegaDL for Windows → Settings → Browser, which shows the extension folder and the pairing key.</p></div>
+    <div class="step reveal"><h3>Load it</h3><p>Open chrome://extensions, turn on Developer mode, choose Load unpacked and pick the extension folder.</p></div>
+    <div class="step reveal"><h3>Browse as usual</h3><p>Downloads now go to MegaDL. The extension only talks to MegaDL on your own PC.</p></div>
+  </div>
+
+  <section id="devices" class="center reveal">
+    <span class="eyebrow">Phone and PC</span>
+    <h2>Your phone and PC, <span class="grad-text">working together</span></h2>
+    <p class="lead">Pair them over your Wi-Fi and send downloads between them. Nothing goes through the internet or any server.</p>
+  </section>
+  <div class="steps">
+    <div class="step reveal"><h3>Pair once</h3><p>With both on the same Wi-Fi, open the Devices screen and pair your phone and PC.</p></div>
+    <div class="step reveal"><h3>Send it over</h3><p>Found something on your phone? Send the download to your PC, or the other way round.</p></div>
+    <div class="step reveal"><h3>It waits for you</h3><p>If the other device is offline, the job waits until it's back on your network.</p></div>
+  </div>
+
+  <div class="band reveal">
+    <div class="shield"><svg viewBox="0 0 24 24"><use href="#i-shield"/></svg></div>
+    <div>
+      <h2>Private by design</h2>
+      <p>No accounts, no analytics and no developer servers. Everything stays on your devices and your own network. MegaDL only goes online to download what you ask for, to fetch lyrics from LRCLIB if you turn them on, to update yt-dlp and its engine tools from their official GitHub releases, and to check GitHub for app updates.</p>
+      <ul><li>🔒 No accounts</li><li>🚫 No tracking</li><li>🏠 Stays on your network</li><li>🔑 Key-protected dashboard</li><li>💸 Free, no ads</li></ul>
+    </div>
+  </div>
+
+
+  <section id="faq" class="center reveal">
+    <span class="eyebrow">Questions</span>
+    <h2>Good to know</h2>
+  </section>
+  <div class="faq">
+    <details><summary>Is MegaDL really free?</summary><p>Yes. It's free, with no ads and no tracking.</p></details>
+    <details><summary>Do I need Termux?</summary><p>No. If you already have yt-dlp and FFmpeg in Termux, MegaDL can use them. Otherwise it downloads its own engine (Python, yt-dlp and FFmpeg, about 50 MB) once, from Settings → Engine or automatically with your first music or video download. Direct file downloads need neither.</p></details>
+    <details><summary>How do I install it on Android?</summary><p>Download the APK on your phone and open it. If Android asks, allow installing apps from your browser or file manager. If you use Termux, MegaDL also asks for permission to run commands in it.</p></details>
+    <details><summary>How do I install it on Windows?</summary><p><a href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe">Download MegaDL-Setup.exe</a> (Windows 10 and 11, x64) and run it. You can install it just for you or for all users, and choose the folder. MegaDL uses the yt-dlp and FFmpeg you already have (as programs or through Python), or installs its own.</p></details>
+    <details><summary>How do I add the browser extension?</summary><p>Download <a href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-extension.zip">MegaDL-extension.zip</a> and unzip it, or open MegaDL for Windows → Settings → Browser, which shows the extension folder and the pairing key. Then open chrome://extensions in Chrome, Brave or Edge, turn on Developer mode, choose Load unpacked and pick the folder. If MegaDL isn't running, your browser downloads files normally.</p></details>
+    <details><summary>Which sites does it work with?</summary><p>YouTube, SoundCloud and any other site yt-dlp supports, plus direct links to any file. You can also type a song name to search for it.</p></details>
+    <details><summary>How do I send a download from my phone to my PC?</summary><p>Put both on the same Wi-Fi and pair them from the Devices screen. After that you can send a download from either device to the other. If the other device is offline, the job waits until it's back on your network.</p></details>
+    <details><summary>What is the browser dashboard?</summary><p>MegaDL for Android and for Windows can each serve a dashboard that other devices on your network open in a browser. It's protected by a key, so only people you give the key to can use it.</p></details>
+    <details><summary>How do updates work?</summary><p>On Android, MegaDL checks GitHub for a new version once a day; you'll find it in Settings → Updates. On Windows it checks every 12 hours, installs updates quietly and keeps your settings.</p></details>
+    <details><summary>Why isn't it on Google Play?</summary><p>MegaDL is published directly as an APK on this site and its GitHub releases page.</p></details>
+    <details><summary>Can I download anything with it?</summary><p>MegaDL is a tool, like your browser. You're responsible for downloading only content you have the right to download. See the <a href="terms.html">Terms of Use</a>.</p></details>
+  </div>
+
+  <section id="more" class="center reveal">
+    <span class="eyebrow">More from MegaMind</span>
+    <h2>Also try <span class="grad-text">MegaShare and MegaDo</span></h2>
+  </section>
+  <div class="promo reveal">
+    <img src="megashare.png" alt="MegaShare app icon" width="96" height="96">
+    <div>
+      <h3>MegaShare: share files with anyone</h3>
+      <p>Send photos, videos and whole folders from your phone to any phone or computer over Wi-Fi or hotspot. They just scan a QR code and download or upload in their browser, with no app, no internet and no account. The easier way when Quick Share won't find the other phone.</p>
+      <div class="tags"><span>No app needed</span><span>Any browser</span><span>Wi-Fi or hotspot</span><span>Same themes</span><span>Free</span></div>
+    </div>
+    <div class="actions">
+      <a class="btn" href="https://megamind2999.github.io/MegaShareApk/">See MegaShare</a>
+      <a class="btn ghost" href="https://github.com/MegaMind2999/MegaShareApk/releases/latest/download/MegaShare.apk">Download APK</a>
+    </div>
+  </div>
+  <div class="promo reveal">
+    <img src="https://megamind2999.github.io/MegaDoApk/icon.png" alt="MegaDo app icon" width="96" height="96">
+    <div>
+      <h3>MegaDo: to-dos, notes and reminders</h3>
+      <p>Your to-do list, notes, reminders and clock in one app for Android and Windows. Alarms with snooze, reminders when you arrive somewhere, notes with photos, drawings and voice, 52 handy tools, and sync between your devices through your own Google Drive.</p>
+      <div class="tags"><span>Tasks &amp; notes</span><span>Alarms</span><span>52 tools</span><span>Android &amp; Windows</span><span>Free</span></div>
+    </div>
+    <div class="actions">
+      <a class="btn" href="https://megamind2999.github.io/MegaDoApk/">See MegaDo</a>
+      <a class="btn ghost" href="https://github.com/MegaMind2999/MegaDoApk/releases/latest/download/MegaDo.apk">Download APK</a>
+    </div>
+  </div>
+
+  <section id="download" class="cta reveal">
+    <img src="icon.png" alt="MegaDL app icon" width="88" height="88">
+    <h2>Get MegaDL <span class="grad-text">today</span></h2>
+    <p class="lead" style="margin-inline:auto">Free, no ads, no tracking. For Android 7.0 and newer, and Windows 10 and 11 (x64).</p>
+    <div class="actions">
+      <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL.apk"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg>Android</a>
+      <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe"><svg viewBox="0 0 24 24"><use href="#i-win"/></svg>Windows 10/11</a>
+      <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-extension.zip"><svg viewBox="0 0 24 24"><use href="#i-globe"/></svg>Browser extension</a>
+    </div>
+    <div class="actions">
+      <a class="btn ghost" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest">Release notes</a>
+      <a class="btn ghost" href="https://github.com/MegaMind2999/MegaDLAPK/releases">All versions</a>
+    </div>
+    <div class="install">
+      <div><b>1. Download</b>MegaDL.apk for Android, MegaDL-Setup.exe for Windows, and the extension zip for your browser.</div>
+      <div><b>2. Install</b>Open the APK, and allow installs from your browser if asked. On Windows, run MegaDL-Setup.exe for just you or all users.</div>
+      <div><b>3. Stay updated</b>MegaDL finds new versions on GitHub by itself.</div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="" width="28" height="28">MegaDL</a>
+    <span>© 2026 MegaMind</span>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="https://megamind2999.github.io/MegaShareApk/">MegaShare</a>
+      <a href="https://github.com/MegaMind2999/MegaDLAPK/releases">Releases</a>
+      <a href="https://github.com/MegaMind2999/MegaDLAPK/issues">Report a problem</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Fade sections in as they scroll into view.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+</body>
+</html>
