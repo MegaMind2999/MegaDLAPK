@@ -22,7 +22,8 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* The same text size everywhere: no browser text boosting or bigger default font breaking the layout. */
+html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--bg);
@@ -267,6 +268,16 @@ footer a { color: var(--muted); }
 
 /* ── Screenshot viewer (click a screenshot to see it big) ── */
 .shots img { cursor: zoom-in; }
+/* Windows app screenshots: one big image, then smaller ones in a grid. */
+.desk-shot { margin: 40px auto 0; max-width: 980px; }
+.desk-shot img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--line); cursor: zoom-in;
+  box-shadow: 0 40px 80px -36px rgba(0,0,0,.95), 0 0 0 1px rgba(255,255,255,.03); }
+.desk-shot figcaption { text-align: center; color: var(--muted); font-size: .9rem; margin-top: 12px; font-weight: 600; }
+.desk-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 980px; margin: 22px auto 0; }
+.desk-grid .desk-shot { margin: 0; }
+.desk-grid .desk-shot img { border-radius: 10px; }
+.desk-grid .desk-shot figcaption { font-size: .85rem; margin-top: 8px; }
+@media (max-width: 720px) { .desk-grid { grid-template-columns: 1fr; } }
 .lb { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 24px 72px;
   background: rgba(6, 5, 14, .88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
   opacity: 0; transition: opacity .2s ease; }
@@ -278,6 +289,8 @@ footer a { color: var(--muted); }
   border: 1px solid rgba(255,255,255,.14); box-shadow: 0 40px 90px -30px rgba(0,0,0,.95), 0 0 0 6px rgba(255,255,255,.04);
   transform: scale(.96); transition: transform .25s ease; cursor: default; user-select: none; -webkit-user-drag: none; }
 .lb.open img { transform: none; }
+/* Landscape (Windows) screenshots open wider. */
+.lb.wide img { max-width: min(94vw, 1200px); border-radius: 14px; }
 .lb figcaption { color: var(--fg); font-weight: 700; text-align: center; }
 .lb figcaption span { color: var(--soft); font-weight: 600; margin-left: 8px; }
 .lb button { position: absolute; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; cursor: pointer;

@@ -29,6 +29,21 @@ MegaDL is a download manager in the spirit of IDM, for Android and Windows. Shar
 
 Your phone and PC pair over Wi-Fi so you can send a download from one to the other, and the browser extension hands downloads from Chrome, Brave and Edge to MegaDL on your PC. Everything stays on your devices and your own network.
 
+<p align="center">
+  <img src="screenshots/add.jpg" width="200" alt="Paste or share a link">
+  <img src="screenshots/queue.jpg" width="200" alt="The download queue">
+  <img src="screenshots/formats.jpg" width="200" alt="Pick the exact format">
+  <img src="screenshots/history.jpg" width="200" alt="History with search">
+  <img src="screenshots/stats.jpg" width="200" alt="Statistics">
+  <img src="screenshots/convert.jpg" width="200" alt="Convert on the phone">
+  <img src="screenshots/devices.jpg" width="200" alt="Pair your phone and PC">
+  <img src="screenshots/themes.jpg" width="200" alt="Themes and accent colours">
+</p>
+
+<p align="center">
+  <img src="screenshots/windows-queue.jpg" width="820" alt="MegaDL for Windows: the download queue">
+</p>
+
 ## Features
 
 **Downloads**
@@ -42,9 +57,13 @@ Your phone and PC pair over Wi-Fi so you can send a download from one to the oth
 - Video at a chosen quality (1080p, 720p…) with English or Arabic subtitles
 
 **Queue**
-- Several downloads at a time
+- Several downloads at a time, with live speed and time left
 - Wi-Fi-only option and retry
-- History with search
+- History with search and filters, and statistics: total, speeds, busiest day, top sites and types
+
+**Convert and tools**
+- Convert videos and music, compress, trim, pull the sound out, make a GIF, save frames, take subtitles out and put them back
+- Edit music tags and covers for one song or many, add synced lyrics to songs you already have
 
 **Phone and PC**
 - Pair your phone and PC on the same Wi-Fi from the Devices screen
@@ -52,6 +71,7 @@ Your phone and PC pair over Wi-Fi so you can send a download from one to the oth
 - Either app serves a browser dashboard on your network, protected by a key
 
 **Windows**
+- Grab links from a whole page, RSS feeds, image galleries, torrents and magnet links
 - Scheduler with start and stop times and days
 - When done: do nothing, exit, sleep or shut down, with a 60-second cancel
 - Start all / Pause all
@@ -103,11 +123,11 @@ You are responsible for downloading only content you have the right to download.
 ## More from MegaMind
 
 <a href="https://megamind2999.github.io/MegaShareApk/"><img src="megashare.png" width="48" align="left" alt="MegaShare icon"></a>
-**[MegaShare](https://megamind2999.github.io/MegaShareApk/)**: share files from Android with any phone or computer over Wi-Fi or hotspot. They only need a browser: no app, no internet, no account.
+**[MegaShare](https://megamind2999.github.io/MegaShareApk/)**: share files and apps from Android with any phone or computer over Wi-Fi or hotspot. They only need a browser: no app, no internet, no account. Watch party included.
 <br clear="left">
 
-<a href="https://megamind2999.github.io/MegaDoApk/"><img src="https://megamind2999.github.io/MegaDoApk/icon.png" width="48" align="left" alt="MegaDo icon"></a>
-**[MegaDo](https://megamind2999.github.io/MegaDoApk/)**: to-do list, notes and reminders for Android and Windows, with alarms, location reminders, 52 handy tools and sync through your own Google Drive.
+<a href="https://megamind2999.github.io/MegaDoApk/"><img src="megado.png" width="48" align="left" alt="MegaDo icon"></a>
+**[MegaDo](https://megamind2999.github.io/MegaDoApk/)**: to-do list, notes and reminders for Android and Windows, with alarms, location reminders, 77 handy tools and sync through your own Google Drive.
 <br clear="left">
 
 ## Feedback

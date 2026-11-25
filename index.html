@@ -10,13 +10,22 @@
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <meta name="theme-color" content="#0b0a16">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="MegaMind">
+<meta name="application-name" content="MegaDL">
 
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="MegaDL">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="MegaDL: download manager for Android and Windows">
 <meta property="og:description" content="Free download manager for Android and Windows: music with cover art and lyrics, video at your quality, fast direct files with pause and resume, phone and PC pairing, and a browser extension.">
 <meta property="og:url" content="https://megamind2999.github.io/MegaDLAPK/">
 <meta property="og:image" content="https://megamind2999.github.io/MegaDLAPK/icon.png">
+<meta property="og:image:alt" content="MegaDL app icon">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MegaDL: download manager for Android and Windows">
+<meta name="twitter:description" content="Free download manager: music with cover art and lyrics, video at your quality, fast direct files, phone and PC pairing, and a browser extension.">
+<meta name="twitter:image" content="https://megamind2999.github.io/MegaDLAPK/icon.png">
 
 <!-- Lets Google show MegaDL as an app (name, OS, price, download) in search results. -->
 <script type="application/ld+json">
@@ -31,6 +40,23 @@
   "downloadUrl": "https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL.apk",
   "installUrl": "https://github.com/MegaMind2999/MegaDLAPK/releases/latest",
   "image": "https://megamind2999.github.io/MegaDLAPK/icon.png",
+  "screenshot": [
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/add.jpg", "caption": "Paste a link, pick music or video" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/queue.jpg", "caption": "The queue with live speed and connections" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/formats.jpg", "caption": "Pick the exact format" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/history.jpg", "caption": "History with search" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/stats.jpg", "caption": "Download statistics" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/convert.jpg", "caption": "Convert, compress and trim on the phone" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/devices.jpg", "caption": "Pair your phone and PC" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/settings.jpg", "caption": "Settings in tidy groups" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/themes.jpg", "caption": "Themes and accent colours" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/windows-queue.jpg", "caption": "MegaDL for Windows: the queue" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/windows-grab.jpg", "caption": "MegaDL for Windows: grab links from a page" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/windows-history.jpg", "caption": "MegaDL for Windows: history" },
+    { "@type": "ImageObject", "url": "https://megamind2999.github.io/MegaDLAPK/screenshots/windows-stats.jpg", "caption": "MegaDL for Windows: statistics" }
+  ],
+  "isAccessibleForFree": true,
+  "releaseNotes": "https://github.com/MegaMind2999/MegaDLAPK/releases",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": { "@type": "Person", "name": "MegaMind" }
 }
@@ -72,7 +98,7 @@
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="./"><img src="icon.png" alt="" width="34" height="34">MegaDL</a>
-    <nav class="links"><a href="#features">Features</a><a href="#media">Music &amp; video</a><a href="#windows">Windows</a><a href="#extension">Extension</a><a href="#devices">Devices</a><a href="#faq">FAQ</a></nav>
+    <nav class="links"><a href="#screenshots">Screenshots</a><a href="#features">Features</a><a href="#media">Music &amp; video</a><a href="#windows">Windows</a><a href="#extension">Extension</a><a href="#faq">FAQ</a><a href="#more">More apps</a></nav>
     <a class="btn" href="#download"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg>Download</a>
   </div>
 </header>
@@ -138,24 +164,40 @@
     </div>
   </section>
 
+  <section id="screenshots" class="center reveal">
+    <span class="eyebrow">Take a look</span>
+    <h2>See it <span class="grad-text">in action</span></h2>
+    <div class="shots">
+      <figure><img src="screenshots/add.jpg" alt="MegaDL add card with a link pasted, Audio picked, OPUS at best quality and synced lyrics" loading="lazy"><figcaption>Paste or share a link</figcaption></figure>
+      <figure><img src="screenshots/queue.jpg" alt="Queue with a direct file downloading over 5 connections and a 1080p video downloading, with speed and time left" loading="lazy"><figcaption>A queue that keeps going</figcaption></figure>
+      <figure><img src="screenshots/formats.jpg" alt="Formats dialog for a video: 1080p H.264 with AAC, video file type, start and end time, embed thumbnail" loading="lazy"><figcaption>Pick the exact format</figcaption></figure>
+      <figure><img src="screenshots/history.jpg" alt="History with search and filters: a direct file, a video and songs saved to Download" loading="lazy"><figcaption>History with search</figcaption></figure>
+      <figure><img src="screenshots/stats.jpg" alt="Statistics: total downloaded, average and fastest speed, busiest day, a chart per day, top sites and types" loading="lazy"><figcaption>Your statistics</figcaption></figure>
+      <figure><img src="screenshots/convert.jpg" alt="Convert tab with a video picked: convert, compress, trim, extract audio, subtitles, frames and GIF, with formats and quality" loading="lazy"><figcaption>Convert on the phone</figcaption></figure>
+      <figure><img src="screenshots/devices.jpg" alt="Devices tab: this phone's pairing code, its browser dashboard, and pairing another device" loading="lazy"><figcaption>Phone and PC together</figcaption></figure>
+      <figure><img src="screenshots/settings.jpg" alt="Settings in collapsible groups: appearance, downloads, media defaults, engine and torrents" loading="lazy"><figcaption>Tidy settings</figcaption></figure>
+      <figure><img src="screenshots/themes.jpg" alt="Appearance settings: theme, AMOLED black, app size and 16 accent colours" loading="lazy"><figcaption>Make it yours</figcaption></figure>
+    </div>
+  </section>
+
   <section id="features" class="center reveal">
     <span class="eyebrow">Everything in one place</span>
     <h2>One download manager, <span class="grad-text">every kind of link</span></h2>
     <p class="lead">Built to be quick to use every day: share a link, pick what you want, and let the queue do the rest.</p>
   </section>
   <div class="features">
-    <div class="feature reveal"><div class="ico i-violet"><svg viewBox="0 0 24 24"><use href="#i-link"/></svg></div><h3>Share or paste a link</h3><p>Share from any app: YouTube, SoundCloud, any site yt-dlp supports, or a direct file. YouTube Music links become songs and other videos stay videos, with site rules you can change.</p></div>
-    <div class="feature reveal"><div class="ico i-pink"><svg viewBox="0 0 24 24"><use href="#i-music"/></svg></div><h3>Music, ready to play</h3><p>Opus or MP3, in best quality or small size, with square cover art and metadata. Turn on synced lyrics from LRCLIB if you like.</p></div>
+    <div class="feature reveal"><div class="ico i-violet"><svg viewBox="0 0 24 24"><use href="#i-link"/></svg></div><h3>Share or paste links</h3><p>Share from any app, or paste a whole list of links at once: YouTube, SoundCloud, any site yt-dlp supports, or direct files. No link? Type a song name to search for it.</p></div>
+    <div class="feature reveal"><div class="ico i-pink"><svg viewBox="0 0 24 24"><use href="#i-music"/></svg></div><h3>Music, ready to play</h3><p>Opus or MP3, in best quality or small size, with square cover art and metadata. Add synced lyrics from LRCLIB, and check them before they're saved if you like.</p></div>
     <div class="feature reveal"><div class="ico i-amber"><svg viewBox="0 0 24 24"><use href="#i-film"/></svg></div><h3>Video at your quality</h3><p>Pick a quality, or open Formats to choose the exact stream: resolution, codec, audio language, even just part of a video. English or Arabic subtitles included.</p></div>
-    <div class="feature reveal"><div class="ico i-cyan"><svg viewBox="0 0 24 24"><use href="#i-search"/></svg></div><h3>Search by song name</h3><p>No link? Just type the name of a song to search for it.</p></div>
-    <div class="feature reveal"><div class="ico i-blue"><svg viewBox="0 0 24 24"><use href="#i-zap"/></svg></div><h3>Fast direct downloads</h3><p>Direct files download over several connections at once, with pause and resume.</p></div>
-    <div class="feature reveal"><div class="ico i-green"><svg viewBox="0 0 24 24"><use href="#i-list"/></svg></div><h3>A queue that keeps going</h3><p>Several downloads at a time, a Wi-Fi-only option, retry, and a history you can search.</p></div>
+    <div class="feature reveal"><div class="ico i-blue"><svg viewBox="0 0 24 24"><use href="#i-zap"/></svg></div><h3>Fast direct downloads</h3><p>Direct files download over many connections at once, adding more while they run, with pause and resume that picks up where it stopped.</p></div>
+    <div class="feature reveal"><div class="ico i-green"><svg viewBox="0 0 24 24"><use href="#i-list"/></svg></div><h3>A queue that keeps going</h3><p>Several downloads at a time, live speed and time left, a Wi-Fi-only option, retry, and a history you can search and filter.</p></div>
+    <div class="feature reveal"><div class="ico i-cyan"><svg viewBox="0 0 24 24"><use href="#i-repeat"/></svg></div><h3>Convert on the device</h3><p>Change a video's format or size, compress it, trim a part, pull the sound out, make a GIF, save frames as pictures, or take subtitles out and put them back.</p></div>
+    <div class="feature reveal"><div class="ico i-pink"><svg viewBox="0 0 24 24"><use href="#i-sliders"/></svg></div><h3>Music tools</h3><p>Edit title, artist, album and cover for one song or many at once, add synced lyrics to songs you already have, and compress files.</p></div>
+    <div class="feature reveal"><div class="ico i-amber"><svg viewBox="0 0 24 24"><use href="#i-search"/></svg></div><h3>Your statistics</h3><p>How much you downloaded, your average and fastest speed, your busiest day, a chart per day and your top sites and file types.</p></div>
     <div class="feature reveal"><div class="ico i-violet"><svg viewBox="0 0 24 24"><use href="#i-devices"/></svg></div><h3>Phone and PC together</h3><p>Pair them on the same Wi-Fi and send a download from one to the other over an encrypted link. Jobs for an offline device wait until it's back.</p></div>
     <div class="feature reveal"><div class="ico i-cyan"><svg viewBox="0 0 24 24"><use href="#i-key"/></svg></div><h3>Browser dashboard</h3><p>Either app serves a dashboard to browsers on your network over HTTPS, protected by a key.</p></div>
-    <div class="feature reveal"><div class="ico i-amber"><svg viewBox="0 0 24 24"><use href="#i-sliders"/></svg></div><h3>Settings your way</h3><p>A default folder for each type, a proxy, how many downloads run at once and how many connections each file gets.</p></div>
-    <div class="feature reveal"><div class="ico i-pink"><svg viewBox="0 0 24 24"><use href="#i-palette"/></svg></div><h3>Stunning themes</h3><p>Themes and accent colours, light, dark and AMOLED modes, a glass navigation bar and tidy, collapsible settings groups.</p></div>
-    <div class="feature reveal"><div class="ico i-blue"><svg viewBox="0 0 24 24"><use href="#i-repeat"/></svg></div><h3>Updates itself</h3><p>Both apps get new versions from GitHub releases. Windows installs them quietly and keeps your settings.</p></div>
-    <div class="feature reveal"><div class="ico i-green"><svg viewBox="0 0 24 24"><use href="#i-box"/></svg></div><h3>Termux or its own engine</h3><p>One small APK. It uses the yt-dlp and FFmpeg you already have in Termux, or downloads its own engine once (about 50 MB) when you first need it. No Termux required.</p></div>
+    <div class="feature reveal"><div class="ico i-blue"><svg viewBox="0 0 24 24"><use href="#i-palette"/></svg></div><h3>Stunning themes</h3><p>16 accent colours, light, dark and AMOLED modes, an app size slider, a glass navigation bar and tidy, collapsible settings groups.</p></div>
+    <div class="feature reveal"><div class="ico i-green"><svg viewBox="0 0 24 24"><use href="#i-box"/></svg></div><h3>Termux or its own engine</h3><p>One small APK. It uses the yt-dlp and FFmpeg you already have in Termux, or downloads its own engine once (about 50 MB) when you first need it. Torrents come as an optional kit.</p></div>
   </div>
 
   <section id="media" class="reveal">
@@ -181,16 +223,22 @@
   <section id="windows" class="center reveal">
     <span class="eyebrow">MegaDL for Windows</span>
     <h2>The same MegaDL, <span class="grad-text">on your PC</span></h2>
-    <p class="lead">Your downloads on the big screen, with a scheduler, Start all and Pause all, and the browser extension. An installer for Windows 10 and 11 (x64) that updates itself every 12 hours and keeps your settings.</p>
+    <p class="lead">Your downloads on the big screen: a live queue that shows every connection, a link grabber for whole pages, RSS feeds, torrents, statistics, a scheduler and the browser extension. An installer for Windows 10 and 11 (x64) that updates itself every 12 hours and keeps your settings.</p>
     <div class="actions" style="justify-content:center">
       <a class="btn" href="https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe"><svg viewBox="0 0 24 24"><use href="#i-win"/></svg>Download for Windows</a>
     </div>
   </section>
+  <figure class="desk-shot reveal"><img src="screenshots/windows-queue.jpg" alt="MegaDL for Windows: the queue with a 1080p video and a direct file downloading over 32 connections, each part shown on its progress bar, and two more waiting" width="1440" height="900" loading="lazy"><figcaption>MegaDL for Windows</figcaption></figure>
+  <div class="desk-grid">
+    <figure class="desk-shot reveal"><img src="screenshots/windows-grab.jpg" alt="Grab links: every file linked from a page with its type and size, ready to pick and download" width="1440" height="900" loading="lazy"><figcaption>Grab links from a page</figcaption></figure>
+    <figure class="desk-shot reveal"><img src="screenshots/windows-history.jpg" alt="History on Windows: finished downloads with open, folder, lyrics and retry buttons" width="1440" height="900" loading="lazy"><figcaption>History</figcaption></figure>
+    <figure class="desk-shot reveal"><img src="screenshots/windows-stats.jpg" alt="Statistics on Windows: downloaded, average and fastest speed, busiest day, a chart per day, top sites and types" width="1440" height="900" loading="lazy"><figcaption>Statistics</figcaption></figure>
+  </div>
   <div class="steps">
     <div class="step reveal"><h3>Install your way</h3><p>Just for you, or for all users on the PC. You can also pick your own folder.</p></div>
     <div class="step reveal"><h3>Uses what you have</h3><p>MegaDL finds yt-dlp and FFmpeg if they're already installed, as programs or through Python. If not, it installs its own.</p></div>
     <div class="step reveal"><h3>Schedule it</h3><p>Several queues, each with its own start and stop times, days and download limit. When they finish, do nothing, exit, sleep or shut down, with 60 seconds to cancel.</p></div>
-    <div class="step reveal"><h3>A full download manager</h3><p>Categories with their own folders, a link grabber for whole pages, checksums, archive extraction, FTP, torrents and magnet links, and RSS feeds that download new items for you.</p></div>
+    <div class="step reveal"><h3>A full download manager</h3><p>Categories with their own folders, a link grabber for whole pages, image galleries, checksums, archive extraction, FTP, torrents and magnet links, and RSS feeds that download new items for you.</p></div>
     <div class="step reveal"><h3>Add your own plugins</h3><p>Point MegaDL at your own script to turn a site's page links into direct downloads, or to pull links out of a page.</p></div>
   </div>
 
@@ -260,8 +308,8 @@
     <img src="megashare.png" alt="MegaShare app icon" width="96" height="96">
     <div>
       <h3>MegaShare: share files with anyone</h3>
-      <p>Send photos, videos and whole folders from your phone to any phone or computer over Wi-Fi or hotspot. They just scan a QR code and download or upload in their browser, with no app, no internet and no account. The easier way when Quick Share won't find the other phone.</p>
-      <div class="tags"><span>No app needed</span><span>Any browser</span><span>Wi-Fi or hotspot</span><span>Same themes</span><span>Free</span></div>
+      <p>Send photos, videos, apps and whole folders from your phone to any phone or computer over Wi-Fi or hotspot. They just scan a QR code and download or upload in their browser, with no app, no internet and no account. Watch videos and play music together in sync, and share a text or Wi-Fi password in one tap.</p>
+      <div class="tags"><span>No app needed</span><span>Any browser</span><span>Watch party</span><span>Share apps</span><span>Free</span></div>
     </div>
     <div class="actions">
       <a class="btn" href="https://megamind2999.github.io/MegaShareApk/">See MegaShare</a>
@@ -269,11 +317,11 @@
     </div>
   </div>
   <div class="promo reveal">
-    <img src="https://megamind2999.github.io/MegaDoApk/icon.png" alt="MegaDo app icon" width="96" height="96">
+    <img src="megado.png" alt="MegaDo app icon" width="96" height="96">
     <div>
       <h3>MegaDo: to-dos, notes and reminders</h3>
-      <p>Your to-do list, notes, reminders and clock in one app for Android and Windows. Alarms with snooze, reminders when you arrive somewhere, notes with photos, drawings and voice, 52 handy tools, and sync between your devices through your own Google Drive.</p>
-      <div class="tags"><span>Tasks &amp; notes</span><span>Alarms</span><span>52 tools</span><span>Android &amp; Windows</span><span>Free</span></div>
+      <p>Your to-do list, notes, reminders and clock in one app for Android and Windows. Alarms with snooze, reminders when you arrive somewhere, notes with photos, drawings, voice and Markdown, 77 handy tools including offline live captions and a remote desktop for your PC, and sync between your devices through your own Google Drive.</p>
+      <div class="tags"><span>Tasks &amp; notes</span><span>Alarms</span><span>77 tools</span><span>Android &amp; Windows</span><span>Free</span></div>
     </div>
     <div class="actions">
       <a class="btn" href="https://megamind2999.github.io/MegaDoApk/">See MegaDo</a>
@@ -312,6 +360,7 @@
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
       <a href="https://megamind2999.github.io/MegaShareApk/">MegaShare</a>
+      <a href="https://megamind2999.github.io/MegaDoApk/">MegaDo</a>
       <a href="https://github.com/MegaMind2999/MegaDLAPK/releases">Releases</a>
       <a href="https://github.com/MegaMind2999/MegaDLAPK/issues">Report a problem</a>
     </nav>
@@ -327,6 +376,66 @@
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
     els.forEach(function (e) { io.observe(e); });
+  })();
+
+  // Screenshot viewer: click a screenshot to see it big. Arrows/swipe for next, Esc or tap outside to close.
+  (function () {
+    var imgs = Array.prototype.slice.call(document.querySelectorAll('.shots img, .desk-shot img'));
+    if (!imgs.length) return;
+    var svg = function (d) { return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + d + '"/></svg>'; };
+    var lb = document.createElement('div');
+    lb.className = 'lb'; lb.hidden = true;
+    lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-modal', 'true'); lb.setAttribute('aria-label', 'Screenshot');
+    lb.innerHTML = '<button class="lb-x" aria-label="Close">' + svg('M18 6 6 18M6 6l12 12') + '</button>' +
+      '<button class="lb-prev" aria-label="Previous screenshot">' + svg('M15 18l-6-6 6-6') + '</button>' +
+      '<figure><img alt=""><figcaption></figcaption></figure>' +
+      '<button class="lb-next" aria-label="Next screenshot">' + svg('M9 18l6-6-6-6') + '</button>';
+    document.body.appendChild(lb);
+    var big = lb.querySelector('img'), cap = lb.querySelector('figcaption'), cur = 0, opener = null;
+
+    function show(i) {
+      cur = (i + imgs.length) % imgs.length;
+      var src = imgs[cur];
+      big.src = src.currentSrc || src.src; big.alt = src.alt;
+      lb.classList.toggle('wide', src.naturalWidth > src.naturalHeight);
+      var fc = src.closest('figure') && src.closest('figure').querySelector('figcaption');
+      cap.innerHTML = '';
+      cap.appendChild(document.createTextNode(fc ? fc.textContent : ''));
+      var n = document.createElement('span'); n.textContent = (cur + 1) + ' / ' + imgs.length; cap.appendChild(n);
+      new Image().src = imgs[(cur + 1) % imgs.length].src; // preload the next one
+    }
+    function open(i) {
+      opener = document.activeElement; show(i);
+      lb.hidden = false; document.body.classList.add('lb-lock');
+      requestAnimationFrame(function () { lb.classList.add('open'); });
+      lb.querySelector('.lb-x').focus();
+    }
+    function close() {
+      lb.classList.remove('open'); document.body.classList.remove('lb-lock');
+      setTimeout(function () { lb.hidden = true; }, 200);
+      if (opener && opener.focus) opener.focus();
+    }
+    imgs.forEach(function (img, i) {
+      img.tabIndex = 0; img.setAttribute('role', 'button');
+      img.addEventListener('click', function () { open(i); });
+      img.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); } });
+    });
+    lb.querySelector('.lb-x').onclick = close;
+    lb.querySelector('.lb-prev').onclick = function () { show(cur - 1); };
+    lb.querySelector('.lb-next').onclick = function () { show(cur + 1); };
+    lb.addEventListener('click', function (e) { if (e.target === lb || e.target.tagName === 'FIGURE') close(); });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(cur - 1);
+      else if (e.key === 'ArrowRight') show(cur + 1);
+    });
+    var x0 = null;
+    lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1));
+    });
   })();
 </script>
 </body>

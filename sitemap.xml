@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://megamind2999.github.io/MegaDLAPK/</loc><lastmod>2026-11-19</lastmod><priority>1.0</priority></url>
-  <url><loc>https://megamind2999.github.io/MegaDLAPK/privacy.html</loc><lastmod>2026-11-19</lastmod><priority>0.5</priority></url>
-  <url><loc>https://megamind2999.github.io/MegaDLAPK/terms.html</loc><lastmod>2026-11-19</lastmod><priority>0.5</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://megamind2999.github.io/MegaDLAPK/</loc><lastmod>2026-11-26</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/icon.png</image:loc><image:title>MegaDL app icon</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/add.jpg</image:loc><image:title>MegaDL: paste a link and pick music or video</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/queue.jpg</image:loc><image:title>MegaDL download queue on Android</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/formats.jpg</image:loc><image:title>Pick the exact video format</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/history.jpg</image:loc><image:title>Download history with search</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/stats.jpg</image:loc><image:title>Download statistics</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/convert.jpg</image:loc><image:title>Convert, compress and trim videos on Android</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/devices.jpg</image:loc><image:title>Pair your phone and PC</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/settings.jpg</image:loc><image:title>MegaDL settings</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/themes.jpg</image:loc><image:title>Themes and accent colours</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/windows-queue.jpg</image:loc><image:title>MegaDL for Windows download queue</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/windows-grab.jpg</image:loc><image:title>Grab links from a web page on Windows</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/windows-history.jpg</image:loc><image:title>MegaDL for Windows history</image:title></image:image>
+    <image:image><image:loc>https://megamind2999.github.io/MegaDLAPK/screenshots/windows-stats.jpg</image:loc><image:title>MegaDL for Windows statistics</image:title></image:image>
+  </url>
+  <url><loc>https://megamind2999.github.io/MegaDLAPK/privacy.html</loc><lastmod>2026-11-19</lastmod><priority>0.3</priority></url>
+  <url><loc>https://megamind2999.github.io/MegaDLAPK/terms.html</loc><lastmod>2026-11-19</lastmod><priority>0.3</priority></url>
 </urlset>
