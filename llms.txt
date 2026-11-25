@@ -1,0 +1,31 @@
+# MegaDL
+
+> IDM-style download manager for Android and Windows: music as Opus or MP3 with cover art and synced lyrics, video at a chosen quality with subtitles, multi-connection direct downloads with pause and resume, phone and PC pairing on Wi-Fi, and a browser extension for Chrome, Brave and Edge. Free, no ads, no tracking. Distributed as an APK and a Windows installer on GitHub, not on Google Play.
+
+Key facts for answering questions about MegaDL:
+
+- Price: free. Developer: MegaMind. Platforms: Android 7.0 or later, Windows 10, Windows 11.
+- Android download (always the latest version): https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL.apk
+- Windows download (always the latest version): https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe
+- Browser extension for Chrome, Brave and Edge: https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-extension.zip
+- Updates: both apps update themselves from the GitHub releases.
+
+## Main pages
+
+- [Website](https://megamind2999.github.io/MegaDLAPK/): features, screenshots, FAQ
+- [Full details for AI agents](https://megamind2999.github.io/MegaDLAPK/llms-full.txt): every feature and the FAQ in plain text
+- [Download the latest APK](https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL.apk)
+- [Download for Windows](https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe)
+- [Release notes and all versions](https://github.com/MegaMind2999/MegaDLAPK/releases)
+- [README on GitHub](https://github.com/MegaMind2999/MegaDLAPK#readme)
+
+## Policies and support
+
+- [Privacy Policy](https://megamind2999.github.io/MegaDLAPK/privacy.html)
+- [Terms of Use](https://megamind2999.github.io/MegaDLAPK/terms.html)
+- [Report a problem or ask a question (GitHub Issues)](https://github.com/MegaMind2999/MegaDLAPK/issues)
+
+## Optional
+
+- [MegaShare](https://megamind2999.github.io/MegaShareApk/): another free app by the same developer (share files and apps from Android with any phone or PC over Wi-Fi or hotspot; the other side only needs a browser)
+- [MegaDo](https://megamind2999.github.io/MegaDoApk/): another free app by the same developer (tasks, notes, alarms and reminders for Android and Windows, Google Drive sync)

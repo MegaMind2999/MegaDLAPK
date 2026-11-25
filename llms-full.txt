@@ -1,0 +1,78 @@
+# MegaDL: full details
+
+> IDM-style download manager for Android and Windows: music as Opus or MP3 with cover art and synced lyrics, video at a chosen quality with subtitles, multi-connection direct downloads with pause and resume, phone and PC pairing on Wi-Fi, and a browser extension for Chrome, Brave and Edge.
+
+- Website: https://megamind2999.github.io/MegaDLAPK/
+- Latest APK: https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL.apk
+- Windows installer: https://github.com/MegaMind2999/MegaDLAPK/releases/latest/download/MegaDL-Setup.exe
+- Releases: https://github.com/MegaMind2999/MegaDLAPK/releases
+- Support: https://github.com/MegaMind2999/MegaDLAPK/issues
+- Developer: MegaMind. Price: free (no ads, no subscriptions, no in-app purchases, no analytics).
+- Platforms: Android 7.0 or later, Windows 10, Windows 11.
+- Not on Google Play: published as an APK and a Windows installer on its website and GitHub releases.
+
+## Features
+
+- Share or paste links: Share from any app, or paste a whole list of links at once: YouTube, SoundCloud, any site yt-dlp supports, or direct files. No link? Type a song name to search for it.
+- Music, ready to play: Opus or MP3, in best quality or small size, with square cover art and metadata. Add synced lyrics from LRCLIB, and check them before they're saved if you like.
+- Video at your quality: Pick a quality, or open Formats to choose the exact stream: resolution, codec, audio language, even just part of a video. English or Arabic subtitles included.
+- Fast direct downloads: Direct files download over many connections at once, adding more while they run, with pause and resume that picks up where it stopped.
+- A queue that keeps going: Several downloads at a time, live speed and time left, a Wi-Fi-only option, retry, and a history you can search and filter.
+- Convert on the device: Change a video's format or size, compress it, trim a part, pull the sound out, make a GIF, save frames as pictures, or take subtitles out and put them back.
+- Music tools: Edit title, artist, album and cover for one song or many at once, add synced lyrics to songs you already have, and compress files.
+- Your statistics: How much you downloaded, your average and fastest speed, your busiest day, a chart per day and your top sites and file types.
+- Phone and PC together: Pair them on the same Wi-Fi and send a download from one to the other over an encrypted link. Jobs for an offline device wait until it's back.
+- Browser dashboard: Either app serves a dashboard to browsers on your network over HTTPS, protected by a key.
+- Stunning themes: 16 accent colours, light, dark and AMOLED modes, an app size slider, a glass navigation bar and tidy, collapsible settings groups.
+- Termux or its own engine: One small APK. It uses the yt-dlp and FFmpeg you already have in Termux, or downloads its own engine once (about 50 MB) when you first need it. Torrents come as an optional kit.
+- Lyrics & subtitles: Synced lyrics from LRCLIB for your songs, and English or Arabic subtitles for your videos.
+- Catches downloads: Downloads you start in the browser go to MegaDL with the page's cookies and referer, so files that need a login still work.
+- Alt+click any link: Hold Alt and click a link to send it straight to MegaDL.
+- Media on the page: The extension's popup lists the media on the page you're on.
+
+## FAQ
+
+### Is MegaDL really free?
+
+Yes. It's free, with no ads and no tracking.
+
+### Do I need Termux?
+
+No. If you already have yt-dlp and FFmpeg in Termux, MegaDL can use them. Otherwise it downloads its own engine (Python, yt-dlp and FFmpeg, about 50 MB) once, from Settings → Engine or automatically with your first music or video download. Direct file downloads need neither.
+
+### How do I install it on Android?
+
+Download the APK on your phone and open it. If Android asks, allow installing apps from your browser or file manager. If you use Termux, MegaDL also asks for permission to run commands in it.
+
+### How do I install it on Windows?
+
+Download MegaDL-Setup.exe (Windows 10 and 11, x64) and run it. You can install it just for you or for all users, and choose the folder. MegaDL uses the yt-dlp and FFmpeg you already have (as programs or through Python), or installs its own.
+
+### How do I add the browser extension?
+
+Download MegaDL-extension.zip and unzip it, or open MegaDL for Windows → Settings → Browser, which shows the extension folder and the pairing key. Then open chrome://extensions in Chrome, Brave or Edge, turn on Developer mode, choose Load unpacked and pick the folder. If MegaDL isn't running, your browser downloads files normally.
+
+### Which sites does it work with?
+
+YouTube, SoundCloud and any other site yt-dlp supports, plus direct links to any file. You can also type a song name to search for it.
+
+### How do I send a download from my phone to my PC?
+
+Put both on the same Wi-Fi and pair them from the Devices screen. After that you can send a download from either device to the other. If the other device is offline, the job waits until it's back on your network.
+
+### What is the browser dashboard?
+
+MegaDL for Android and for Windows can each serve a dashboard that other devices on your network open in a browser. It's protected by a key, so only people you give the key to can use it.
+
+### How do updates work?
+
+On Android, MegaDL checks GitHub for a new version once a day; you'll find it in Settings → Updates. On Windows it checks every 12 hours, installs updates quietly and keeps your settings.
+
+### Why isn't it on Google Play?
+
+MegaDL is published directly as an APK on this site and its GitHub releases page.
+
+### Can I download anything with it?
+
+MegaDL is a tool, like your browser. You're responsible for downloading only content you have the right to download. See the Terms of Use.
+
