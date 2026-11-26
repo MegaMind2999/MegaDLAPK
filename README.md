@@ -87,6 +87,7 @@ Your phone and PC pair over Wi-Fi so you can send a download from one to the oth
 - A default folder for each type, a proxy, parallel downloads and connections per file
 - Themes and accent colours, light, dark and AMOLED, a glass navigation bar and collapsible settings groups
 - Updates itself from GitHub: Android checks daily (Settings → Updates); Windows checks every 12 hours, installs quietly and keeps your settings
+- Light in the background: on Windows, minimized or in the tray MegaDL stops drawing and polling and its background pauses when it isn't the active window; on Android the background stops off screen and in battery saver, and the phone is only kept awake while something downloads
 - Private: no accounts, ads, analytics or developer servers
 
 ## Install
